@@ -1,0 +1,116 @@
+
+/*PEN STYLES#6F1CD0*/
+body{
+  font-family: Montserrat, sans-serif;
+   background: #f1f1f1;
+  margin: 2rem;
+  
+}
+.container1{
+  user-select: none;
+  margin: 100px auto;
+  background:slateblue ;
+  color: #b3b8cd;
+  border-radius: 5px;
+  width:100% ;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+}
+.cover-photo{
+  background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  height: 160px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.profile{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 93px 0 0 -175px;
+  border: 1px solid #1f1a32;
+  padding: 7px;
+  background: #292343;
+}
+.profile-name{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 27px 0 0 120px;
+}
+.about{
+  margin-top: 35px;
+  line-height: 21px;
+}
+button{
+  margin: 10px 0 40px 0;
+}
+.msg-btn, .follow-btn{
+  background: #03bfbc;
+  border: 1px solid #03bfbc;
+  padding: 10px 25px;
+  color: #231e39;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+}
+
+.container i{
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+.container i:hover{
+  color: #03bfbc;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  width: 700px;
+  height: 300px;
+  margin: 100px auto;
+  transition: 0.4s;
+}
+
+.left {
+  flex-basis: 40%;
+  background-image: url(https://images.unsplash.com/photo-1584629776284-f946771467fd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s;
+  position: relative;
+  z-index: 99;
+}
+
+.right {
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-color: #f8ccd0;
+  text-align: center;
+  padding: 50px 30px 50px 60px;
+  font-family: arial;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+}
+.right::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform: skewy(-45deg) translate(-40px, -20px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #f06292;
+  transition: 0.4s;
+  z-index: 0;
+}
